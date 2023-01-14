@@ -1,0 +1,119 @@
+
+/* ---------for mobile devices--------- */
+@media screen and (max-width:576px) {
+    
+    nav{
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .logo h3{
+        font-size: 2.7vw;
+    }
+    
+    nav .lists{
+        display: none;
+    }
+    .search-bar{
+        display: flex;
+    }
+    .search-bar .fa-bars{
+        display: block;
+    }
+    .search-bar .fa-magnifying-glass{
+        display: none;
+    }
+    main {
+        padding: 50px 0px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    .banner__container{
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        padding: 0 30px;  
+    }
+    .banner__heading h1{
+        font-size: 5vw;
+        line-height: 2rem;
+    }
+    .banner__left{
+        width:100%;
+    }
+    .banner__right{
+        width: 100%;
+    }
+    .banner__right img{
+        width: 314px;
+        height: 314px;
+   }
+   .promotion__container{
+   
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+   }
+   .popular__container__grid{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.feature__container{
+    flex-direction: column;
+    gap: 10%; 
+    padding: 0 20px; 
+}
+.feature__left{
+    width: 100%;
+}
+.feature__right{
+    width: 100%;
+}
+.feature__right h2{
+    font-size: 6vw;
+    color: var(--primary-font);
+    font-weight: 900;
+}
+.footer__container h2{
+    font-size: 4.5vw;
+}
+  
+
+
+}
+
+
+/* ---------Resposive for tablets ----------- */
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+    main {
+        padding: 30px 60px;
+    }
+    .banner__heading h1{
+        font-size: 5vw;
+        line-height: 2.8rem;
+    }
+    .banner__container{
+        gap: 30px;
+        align-items: center;  
+    }
+    .banner__right img{
+        width: 100%;
+   }
+
+   .promotion__container{
+    
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    
+   }
+   .popular__container__grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+  
+  
+
+}

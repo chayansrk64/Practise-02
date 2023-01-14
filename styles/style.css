@@ -22,6 +22,9 @@
 body{
     background-color: var(--background-color);
 }
+section{
+    margin: 120px 0;
+}
 button{
     background-color: var(--primary-color);
     padding: 8px 15px;
@@ -37,7 +40,6 @@ button:hover{
 }
 
 nav{
-    
     padding:40px 0px;
     display: flex;
     align-items: center;
@@ -68,6 +70,9 @@ nav{
 .search-bar i{
     margin-left: 15px;
 }
+.search-bar .fa-bars{
+    display: none;
+}
 /* -----------banner section ---------- */
 main {
     padding: 50px 100px;
@@ -75,8 +80,7 @@ main {
 .banner__container{
     display: flex;
     gap: 130px;
-    align-items: center;
-    
+    align-items: center;  
 }
 .banner__left{
     width: 60%;
@@ -98,4 +102,94 @@ main {
 .banner__right img{
      width: 414px;
      height: 414px;
+}
+
+/* ---------promotion section ---------- */
+.promotion__container{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(187, 185, 185, 0.863);
+    border-bottom: 1px solid rgba(187, 185, 185, 0.863); 
+   
+}
+.promotion__container img{
+    width:10%;
+}
+/* ----------collection section --------- */
+.popular-heading{
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 3.2vw;
+    color: var(--primary-font);
+}
+.popular__container__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.grid__box{
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+.grid__box img{
+    width: 100%;
+}
+.anchor{
+    padding-top: 25px;
+    text-align:right;
+}
+.anchor a, .arrow{
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 700;
+}
+/* --------feature section ---------- */
+.feature__container{
+    display: flex;
+    gap: 10%;
+    align-items: center; 
+}
+.feature__left{
+    width: 40%;
+}
+.feature__left img{
+    width: 100%;
+}
+.feature__right{
+    width: 50%;
+}
+.feature__right h2{
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: var(--primary-font);
+}
+.feature__right p{
+    color: #3A3A3A;
+    font-weight: 900;
+    padding: 35px 0;
+}
+/* ----------footer ---------- */
+footer{
+    background-color:#0A0826;
+}
+.footer__container{
+    color: var(--secondary-font);
+    text-align: center;
+    padding: 40px;
+}
+.footer__container h2{
+    font-size: 2.5vw;
+}
+.footer__container .copyright{
+    padding-top: 20px;
+}
+.icons i{
+    padding:20px 10px;
+    color: var(--secondary-font);
+    font-size: 24px;
+    cursor: pointer;
 }
