@@ -7,9 +7,16 @@
         padding: 30px 0px;
     }
     .logo h3{
-        font-size: 2.7vw;
+        font-size: 3.7vw;
     }
-    
+    .logo .fa-bars{
+        display: block;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
     nav .lists{
         display: none;
     }
@@ -49,8 +56,10 @@
         width: 314px;
         height: 314px;
    }
+   .promotion{
+    margin: 120px 30px;
+   }
    .promotion__container{
-   
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
